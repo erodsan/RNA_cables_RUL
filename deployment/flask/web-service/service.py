@@ -76,9 +76,11 @@ def default():
 		score = loaded_model.predict(hoist)
 		score_norm =  loaded_scaler_y.inverse_transform(score)
 		score_norm = score_norm.astype(int)
-		print("\nFinal score: ", score_norm)
+		score_norm_f = score_norm[0]
+		
+		print("\nFinal score: ", score_norm_f)
 				
-		return ' RUL = ' + str(score_norm[0]) + ' Horas'
+		return ' RUL = ' + str(score_norm_f[0]) + ' Horas'
 
 # Run de application
 app.run(host='0.0.0.0',port=port)
