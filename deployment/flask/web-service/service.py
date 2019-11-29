@@ -25,7 +25,7 @@ def main_page():
 
 @app.route('/rul/', methods=['GET','POST'])
 def churn():
-	return 'Modelo: RUL de cables!'
+	return 'Modelo RUL de cables!'
 
 @app.route('/rul/hoist/', methods=['GET','POST'])
 def default():
