@@ -46,73 +46,41 @@
 	 
 	      
         <div layout="row" layout-align="space-between center">
-          <span>Edad</span>
-          <md-slider-container> {: data.Edad :}&nbsp;
-            <md-slider aria-label="Slider" min="20" max="80" ng-model="data.Edad" id="edad-slider"></md-slider>
+          <span>Toneladas</span>
+          <md-slider-container> {: data.Toneladas :}&nbsp;
+            <md-slider aria-label="Slider" min="20" max="4800000" ng-model="data.Toneladas" id="ton-slider"></md-slider>
           </md-slider-container>
         </div>
 
-
-	      
 	<div layout="row" layout-align="space-between center">
-          <span>Nivel SocioEconomico</span>
-          <md-select ng-model="data.Nivel_Socioeconomico" placeholder="Select">
-            <md-option value="Alto">Alto</md-option>
-            <md-option value="Media">Media</md-option>
-          </md-select>
+          <span>Leve</span>
+          <md-slider-container> {: data.Leve :}&nbsp;
+            <md-slider aria-label="Slider" min="1402" max="12654" ng-model="data.Leve" id="lev-slider"></md-slider>
+          </md-slider-container>
         </div>
-	      
+	   
 	<div layout="row" layout-align="space-between center">
-          <span>Estado Civil</span>
-          <md-select ng-model="data.Estado_Civil" placeholder="Select">
-            <md-option value="Casado">Casado</md-option>
-            <md-option value="Divorciado">Divorciado</md-option>
-	    <md-option value="Soltero">Soltero</md-option>
-          </md-select>
-        </div>
-	
-	<div layout="row" layout-align="space-between center">
-          <span>Nivel de Educacion</span>
-          <md-select ng-model="data.Nivel_Educacion" placeholder="Select">
-            <md-option value="Primaria">Primaria</md-option>
-            <md-option value="Secundaria">Secundaria</md-option>
-	    <md-option value="Tecnico">Tecnico</md-option>
-	    <md-option value="Universitario">Universitario</md-option>
-          </md-select>
-        </div>	
-	      
-	<div style="margin-bottom:32px" layout="row" layout-align="space-between center">
-          <span>Viaja Solo</span>
-          <md-radio-group ng-model="data.Viaja_Solo" layout="row">
-            <md-radio-button value="No">No</md-radio-button>
-            <md-radio-button value="Si">Si</md-radio-button>
-          </md-radio-group>
-        </div>
-	  
-	<div layout="row" layout-align="space-between center">
-          <span>Medio Reserva</span>
-          <md-select ng-model="data.Medio_Reserva" placeholder="Select">
-            <md-option value="Email">Email</md-option>
-            <md-option value="Telefono">Telefono</md-option>
-	    <md-option value="Web">Web</md-option>
-          </md-select>
-        </div>	
-	     
-	<div layout="row" layout-align="space-between center">
-          <span>Registros en Hotel</span>
-          <md-slider-container> {: data.Registros_Hotel :}&nbsp;
-            <md-slider aria-label="Slider" min="1" max="35" ng-model="data.Registros_Hotel" id="reghotel-slider"></md-slider>
+          <span>Moderado</span>
+          <md-slider-container> {: data.Moderado :}&nbsp;
+            <md-slider aria-label="Slider" min="1080" max="9270" ng-model="data.Moderado" id="mod-slider"></md-slider>
           </md-slider-container>
         </div>
 	      
-	<div style="margin-bottom:32px" layout="row" layout-align="space-between center">
-          <span>Tipo Viaje</span>
-          <md-radio-group ng-model="data.Tipo_Viaje" layout="row">
-            <md-radio-button value="Negocio">Negocio</md-radio-button>
-            <md-radio-button value="Placer">Placer</md-radio-button>
-          </md-radio-group>
-        </div>
-
+	<div layout="row" layout-align="space-between center">
+          <span>Medio</span>
+          <md-slider-container> {: data.Medio :}&nbsp;
+            <md-slider aria-label="Slider" min="1080" max="14701" ng-model="data.Medio" id="med-slider"></md-slider>
+          </md-slider-container>
+        </div>	  
+      
+	<div layout="row" layout-align="space-between center">
+          <span>Severo</span>
+          <md-slider-container> {: data.Severo :}&nbsp;
+            <md-slider aria-label="Slider" min="1729" max="13442" ng-model="data.Severo" id="sev-slider"></md-slider>
+          </md-slider-container>
+        </div>	
+	      
+	      
       </md-card-content>
 
       <md-card-actions layout="row" layout-align="end center">
