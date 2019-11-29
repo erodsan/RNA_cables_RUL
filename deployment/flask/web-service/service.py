@@ -23,11 +23,11 @@ loaded_model,loaded_scaler,loaded_scaler_y,loaded_labelEncoderX1, graph = cargar
 def main_page():
 	return 'Modelo desplegado en la Nube!'
 
-@app.route('/RUL/', methods=['GET','POST'])
+@app.route('/rul/', methods=['GET','POST'])
 def churn():
 	return 'Modelo: RUL de cables!'
 
-@app.route('/RUL/hoist/', methods=['GET','POST'])
+@app.route('/rul/hoist/', methods=['GET','POST'])
 def default():
 	# print (request.data)
 	# print (request.args)
