@@ -59,7 +59,7 @@ def default():
 			"\nLeve: ",Leve,
 			"\nModerado: ",Moderado,
 			"\nMedio: ",Medio ,
-	                "\nSevero: ",Severo,
+	                "\nSevero: ",Severo)
 
 	# Transformado/Escalando la data
 	[Marca] = loaded_labelEncoderX1.transform([Marca])
@@ -67,7 +67,7 @@ def default():
 	hoist = np.array([Marca,Diametro,Toneladas,Leve,Moderado,Medio,Severo])
 	print("\nhoist: ", hoist)
 	hoist = loaded_scaler.transform([hoist])
-	print("hhoist Norm: ", hoist)
+	print("hoist Norm: ", hoist)
 
 	with graph.as_default():
 		resultado = ""
