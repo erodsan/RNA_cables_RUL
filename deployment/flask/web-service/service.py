@@ -15,8 +15,8 @@ print ("Port recognized: ", port)
 app = Flask(__name__)
 CORS(app)
 #global loaded_model,loaded_scaler, graph loaded_model,loaded_scaler, graph = cargarModelo()
-global loaded_model,loaded_scaler,loaded_labelEncoderX1,graph
-loaded_model,loaded_scaler,loaded_labelEncoderX1, graph = cargarModelo()
+global loaded_model,loaded_scaler,loaded_scaler_y,loaded_labelEncoderX1,graph
+loaded_model,loaded_scaler,loaded_scaler_y,loaded_labelEncoderX1, graph = cargarModelo()
 
 #Define a route
 @app.route('/')
