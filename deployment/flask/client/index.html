@@ -35,13 +35,11 @@
         </div>
 	      
 	      
-	<div layout="row" layout-align="space-between center">
+        <div layout="row" layout-align="space-between center">
           <span>Diametro</span>
-          <md-select ng-model="data.Diametro" placeholder="Select">
-            <md-option value="2.5">2.5</md-option>
-            <md-option value="2.75">2.75</md-option>
-            <md-option value="3.75">3.75</md-option>
-          </md-select>
+          <md-slider-container> {: data.Diametro :}&nbsp;
+            <md-slider aria-label="Slider" min="2.5" max="3.75" ng-model="data.Diametro" id="dia-slider"></md-slider>
+          </md-slider-container>
         </div>
 	 
 	      
