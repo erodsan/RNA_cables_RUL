@@ -74,13 +74,11 @@ def default():
 	with graph.as_default():
 		resultado = ""
 		score = loaded_model.predict(hoist)
-		#score_norm = (score > 0.5)
-		#score_norm = score_norm.astype(int)
-		#print("\nFinal score: ", score_norm)
-		
-		#grupo = np.argmax(score_norm) + 1
-
-		return ' Score: ' + str(score[0]) + ' --> '
+		score_norm =  loaded_scaler_y.inverse_transform(score)
+		score_norm = score_norm.astype(int)
+		print("\nFinal score: ", score_norm)
+				
+		return ' RUL (Horas): ' + str(score_norm[0])
 
 # Run de application
 app.run(host='0.0.0.0',port=port)
