@@ -52,7 +52,6 @@ def default():
 	Moderado = data.get("Moderado")
 	Medio = data.get("Medio")
 	Severo = data.get("Severo")
-	Horas = data.get("Horas")
 
 	print ("\nMarca: ",Marca,
 			"\nDiametro: ", Diametro,
@@ -61,12 +60,11 @@ def default():
 			"\nModerado: ",Moderado,
 			"\nMedio: ",Medio ,
 	                "\nSevero: ",Severo,
-			"\nHoras: ", Horas)
 
 	# Transformado/Escalando la data
 	[Marca] = loaded_labelEncoderX1.transform([Marca])
 	
-	hoist = np.array([Marca,Diametro,Toneladas,Leve,Moderado,Medio,Severo,Horas])
+	hoist = np.array([Marca,Diametro,Toneladas,Leve,Moderado,Medio,Severo])
 	print("\nhoist: ", hoist)
 	hoist = loaded_scaler.transform([hoist])
 	print("hhoist Norm: ", hoist)
