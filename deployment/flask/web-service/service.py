@@ -78,7 +78,7 @@ def default():
 		score_norm = score_norm.astype(int)
 		print("\nFinal score: ", score_norm)
 				
-		return ' RUL (Horas): ' + str(score_norm[0])
+		return ' RUL: ' + str(score_norm[[0]]) + 'Horas'
 
 # Run de application
 app.run(host='0.0.0.0',port=port)
