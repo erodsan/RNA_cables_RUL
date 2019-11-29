@@ -1,7 +1,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO 8859-1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Segmentacion de Huespedes</title>
+  <title>RUL Cable de Hoist</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
@@ -11,18 +11,40 @@
 <body ng-app="myApp" ng-cloak style="background-color: #efefef" ng-controller="myCtrl" layout="column">
   <md-toolbar>
     <div class="md-toolbar-tools">
-      <span>**** Segmentacion de Clientes ****</span>
+      <span>RUL Cable de Hoist</span>
     </div>
   </md-toolbar>
   <md-content flex style="width:420">
     <md-card>
       <md-card-content>
-        <p><em>Ingrese los datos del huesped:</em></p>
+        <p><em>Ingrese los datos del cable:</em></p>
        </md-card-content>
     </md-card>
     <md-card>
       <md-card-content>
 
+	      
+	<div layout="row" layout-align="space-between center">
+          <span>Marca</span>
+          <md-select ng-model="data.Marca" placeholder="Select">
+            <md-option value="BRIDON">BRIDON</md-option>
+            <md-option value="CAT">CAT</md-option>
+            <md-option value="PROCABLES">PROCABLE</md-option>
+            <md-option value="WIRE ROPE">WIRE ROPE</md-option>
+          </md-select>
+        </div>
+	      
+	      
+	<div layout="row" layout-align="space-between center">
+          <span>Diametro</span>
+          <md-select ng-model="data.Diametro" placeholder="Select">
+            <md-option value="2.5">2.5</md-option>
+            <md-option value="2.75">2.75</md-option>
+            <md-option value="3.75">3.75</md-option>
+          </md-select>
+        </div>
+	 
+	      
         <div layout="row" layout-align="space-between center">
           <span>Edad</span>
           <md-slider-container> {: data.Edad :}&nbsp;
@@ -30,18 +52,7 @@
           </md-slider-container>
         </div>
 
-	<div layout="row" layout-align="space-between center">
-          <span>Actividad Laboral</span>
-          <md-select ng-model="data.Actividad_Laboral" placeholder="Select">
-            <md-option value="Empleado">Empleado</md-option>
-            <md-option value="Empresario">Empresario</md-option>
-            <md-option value="Estudiante">Estudiante</md-option>
-            <md-option value="Gerente">Gerente</md-option>
-            <md-option value="Independiente">Independiente</md-option>
-            <md-option value="Jubilado">Jubilado</md-option>
-            <md-option value="Tecnico">Tecnico</md-option>
-          </md-select>
-        </div>
+
 	      
 	<div layout="row" layout-align="space-between center">
           <span>Nivel SocioEconomico</span>
