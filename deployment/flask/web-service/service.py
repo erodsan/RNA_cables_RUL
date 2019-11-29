@@ -80,7 +80,7 @@ def default():
 		
 		print("\nFinal score: ", score_norm_f)
 				
-		return 'Vida Util = ' + str(score_norm_f[0]) + ' Horas\n' + 'RUL = Vida Util (Hrs) - Uso Actual(Hrs)' 
+		return 'Vida Util = ' + str(score_norm_f[0]) + ' Horas' 
 
 # Run de application
 app.run(host='0.0.0.0',port=port)
