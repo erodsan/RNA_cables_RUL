@@ -80,7 +80,7 @@ def default():
 		
 		#grupo = np.argmax(score_norm) + 1
 
-		return ' Score: ' + str(score[0]) + ' --> '+ score
+		return ' Score: ' + str(score[0]) + ' --> '
 
 # Run de application
 app.run(host='0.0.0.0',port=port)
